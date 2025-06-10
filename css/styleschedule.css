@@ -1,0 +1,55 @@
+body{
+    margin: 0px;
+    padding: 0px;
+}
+.header-content {
+    background-color: #333;
+    padding: 0px;
+    margin: 0px;
+    text-align: center;
+}
+.main-text{
+    font-size: 24px;
+    color: white;
+}
+.back-button {
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 10px;
+    position: absolute;
+    left: 10px;
+}
+.back-button:hover {
+    color: #ccc;
+}
+.nav-content{
+    text-align: center;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-content p{
+    text-align: center;
+    font-size: 32px;
+    color: #333;
+    align-items: center;
+}
+.nav-content table{
+    font-size: 32px;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    border: 1px solid #333;
+}
+.nav-content table th{
+    color: #333;
+    border-bottom: 2px solid #333;
+    border-right: 2px solid #333;
+    padding: 0px;
+    margin: 0px;
+}
+.nav-content table td{
+    padding: 0px;
+    margin: 0px;
+    border-right: 1px solid #333;
+}

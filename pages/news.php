@@ -28,5 +28,53 @@
             </nav>
         </div>
     </header>
+    
+    <main class="news-container">
+        <section class="latest-news">
+            <h2>Последние новости</h2>
+            <div class="news-grid">
+                <?php
+                require_once '../php/db.php';
+                $sql = "SELECT * FROM news ORDER BY date DESC LIMIT 3";
+                $result = $conn->query($sql);
+                
+                if ($result->num_rows > 0) {
+                    while($row = $result->fetch_assoc()) {
+                        echo '<div class="news-card">';
+                        echo '<img src="' . $row['image'] . '" alt="' . $row['title'] . '">';
+                        echo '<h3>' . $row['title'] . '</h3>';
+                        echo '<p class="news-date">' . date('d.m.Y', strtotime($row['date'])) . '</p>';
+                        echo '<p class="news-preview">' . substr($row['content'], 0, 150) . '...</p>';
+                        echo '<a href="news-detail.php?id=' . $row['id'] . '" class="read-more">Читать далее</a>';
+                        echo '</div>';
+                    }
+                }
+                ?>
+            </div>
+        </section>
+
+        <section class="all-news">
+            <h2>Все новости</h2>
+            <div class="news-grid">
+                <?php
+                $sql = "SELECT * FROM news ORDER BY date DESC";
+                $result = $conn->query($sql);
+                
+                if ($result->num_rows > 0) {
+                    while($row = $result->fetch_assoc()) {
+                        echo '<div class="news-card">';
+                        echo '<img src="' . $row['image'] . '" alt="' . $row['title'] . '">';
+                        echo '<h3>' . $row['title'] . '</h3>';
+                        echo '<p class="news-date">' . date('d.m.Y', strtotime($row['date'])) . '</p>';
+                        echo '<p class="news-preview">' . substr($row['content'], 0, 150) . '...</p>';
+                        echo '<a href="news-detail.php?id=' . $row['id'] . '" class="read-more">Читать далее</a>';
+                        echo '</div>';
+                    }
+                }
+                ?>
+            </div>
+        </section>
+    </main>
+    
 </body>
 </html>
