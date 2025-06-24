@@ -10,7 +10,7 @@
 <header>
         <div class="header-content">
             <div class="logo">
-                <h1>Учитель начальных классов – Ирина Петрова</h1>
+                <h1>Учитель начальных классов – Ольга Александровна</h1>
             </div>
             <nav class="main-menu">
                 <a href="main.php">Главная</a>

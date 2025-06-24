@@ -124,6 +124,7 @@ header {
     border-radius: 50%;
     object-fit: cover;
 }
+/*Контакты*/
 
 /* Quick Links */
 .quick-links {
@@ -483,6 +484,7 @@ input[type="date"]:focus {
     margin-right: 5px;
 }
 .about-me {
+    margin-top: 20px;
     padding: 4rem 0;
     background-color: #f9f9f9;
 }
@@ -604,11 +606,13 @@ input[type="date"]:focus {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
+    margin-top: 30px;
 }
 
 .container h2 {
     text-align: center;
     margin-bottom: 30px;
+    margin-top: 30px;
     color: #333;
 }
 
@@ -708,5 +712,174 @@ input[type="date"]:focus {
     color: #444;
     font-size: 1.1em;
 }
+
+.classes-section {
+    padding: 4rem 0;
+    background-color: #f9f9f9;
+}
+
+.classes-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.class-block {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(44, 62, 80, 0.08);
+    padding: 2rem;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.class-block:hover {
+    transform: translateY(-5px) scale(1.02);
+    box-shadow: 0 4px 16px rgba(44, 62, 80, 0.15);
+}
+
+.class-block h3 {
+    margin-bottom: 1rem;
+    color: #2c3e50;
+}
+
+.class-block p {
+    margin-bottom: 0.5rem;
+    font-size: 1.05rem;
+}
+
+.classes-banner {
+    background: #757575;
+    color: #fff;
+    text-align: center;
+    padding: 2rem 0 1.5rem 0;
+}
+
+.classes-banner h2 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.classes-banner p {
+    font-size: 1.1rem;
+    color: #e0e0e0;
+}
+
+.class-card-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 400px;
+    background: #fafafa;
+    padding: 3rem 0;
+}
+
+.class-card {
+    display: flex;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 2px 12px rgba(44,62,80,0.08);
+    width: 90%;
+    max-width: 1100px;
+    min-height: 260px;
+    align-items: stretch;
+}
+
+.class-card-left {
+    background: #f5f5f5;
+    min-width: 140px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.2rem;
+    font-weight: 600;
+    color: #444;
+    border-radius: 12px 0 0 12px;
+    padding: 2rem 1.5rem;
+}
+
+.class-year {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+.class-years {
+    font-size: 1.3rem;
+    color: #888;
+}
+
+.class-card-center {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 1.5rem;
+}
+
+.class-students {
+    background: #ededed;
+    border-radius: 8px;
+    padding: 1.5rem 2rem;
+    min-width: 260px;
+    max-height: 180px;
+    overflow-y: auto;
+}
+
+.class-students ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.class-students li {
+    font-size: 1.15rem;
+    margin-bottom: 0.7rem;
+    color: #333;
+}
+
+.class-card-right {
+    min-width: 260px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0 12px 12px 0;
+    background: #fff;
+    padding: 2rem 1.5rem;
+}
+
+.class-photo-placeholder {
+    width: 180px;
+    height: 120px;
+    background: #f0f0f0;
+    border: 2px dashed #bdbdbd;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #757575;
+    font-size: 1.1rem;
+}
+
+@media (max-width: 900px) {
+    .class-card {
+        flex-direction: column;
+        min-width: 0;
+    }
+    .class-card-left, .class-card-center, .class-card-right {
+        min-width: 0;
+        border-radius: 0;
+        padding: 1.2rem 0.7rem;
+    }
+    .class-photo-placeholder {
+        width: 100%;
+        height: 100px;
+    }
+}
+
+
+
 
 

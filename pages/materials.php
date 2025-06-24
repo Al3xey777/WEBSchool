@@ -14,7 +14,7 @@ session_start();
 <header>
         <div class="header-content">
             <div class="logo">
-                <h1>Учитель начальных классов – Ирина Петрова</h1>
+                <h1>Учитель начальных классов – Ольга Александровна</h1>
             </div>
             <nav class="main-menu">
                 <a href="main.php">Главная</a>
@@ -48,10 +48,9 @@ session_start();
             </div>
         </div>
     </section>
-
     <section class="quick-links">
         <div class="quick-links-content">
-            <a href="#" class="quick-link">
+            <a href="metmaterials.php" class="quick-link">
                 <i class="fas fa-book"></i>
                 <span>Методические материалы</span>
             </a>
@@ -59,13 +58,13 @@ session_start();
                 <i class="fas fa-calendar-alt"></i>
                 <span>Расписание уроков</span>
             </a>
-            <a href="#" class="quick-link">
-                <i class="fas fa-bullhorn"></i>
-                <span>Последние объявления</span>
+            <a href="homework.php" class="quick-link">
+                <i class="fas fa-tasks"></i>
+                <span>Домашнее задание</span>
             </a>
-            <a href="#" class="quick-link">
-                <i class="fas fa-envelope"></i>
-                <span>Связаться со мной</span>
+            <a href="academic-perf.php" class="quick-link">
+                <i class="fas fa-chart-line"></i>
+                <span>Журнал успеваемости</span>
             </a>
         </div>
     </section>

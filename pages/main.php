@@ -14,7 +14,7 @@ session_start();
     <header>
         <div class="header-content">
             <div class="logo">
-                <h1>Учитель начальных классов – Ирина Петрова</h1>
+                <h1>Учитель начальных классов – Ольга Александровна</h1>
             </div>
             <nav class="main-menu">
                 <a href="main.php" class="active">Главная</a>
@@ -37,10 +37,10 @@ session_start();
         <div class="banner-content">
             <?php if(isset($_SESSION['login'])): ?>
                 <h2>Добро пожаловать, <span class="user-name"><?= $_SESSION['first_name'] ?></span>!</h2>
-                <p>Я, Ирина Петрова, помогаю детям полюбить учёбу и раскрыть их потенциал.</p>
+                <p>Я, Ольга Александровна, помогаю детям полюбить учёбу и раскрыть их потенциал.</p>
             <?php else: ?>
                 <h2>Добро пожаловать на мой сайт!</h2>
-                <p>Я, Ирина Петрова, помогаю детям полюбить учёбу и раскрыть их потенциал.</p>
+                <p>Я, Ольга Александровна, помогаю детям полюбить учёбу и раскрыть их потенциал.</p>
             <?php endif; ?>
         </div>
     </section>
@@ -64,7 +64,7 @@ session_start();
 
     <section class="quick-links">
         <div class="quick-links-content">
-            <a href="#" class="quick-link">
+            <a href="metmaterials.php" class="quick-link">
                 <i class="fas fa-book"></i>
                 <span>Методические материалы</span>
             </a>
